@@ -1,0 +1,12 @@
+ion-tabs.tabs-icon-top
+  ion-tab(title='Login', ng-if='!$root.authed', icon='icon ion-log-in', href='#/tab/login')
+    ion-nav-view(name='tab-login')
+  ion-tab(title='Mileage', ng-if='$root.authed', icon='icon ion-model-s', href='#/tab/mileage')
+    ion-nav-view(name='tab-mileage')
+  ion-tab(title='Friends', ng-if='$root.authed', icon='icon ion-heart', href='#/tab/friends')
+    ion-nav-view(name='tab-friends')
+  ion-tab(title='Account', ng-if='$root.authed', icon='icon ion-gear-b', href='#/tab/account')
+    ion-nav-view(name='tab-account')
+//
+   Created by sam on 4/16/14.
+
